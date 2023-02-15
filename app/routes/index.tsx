@@ -3,12 +3,12 @@ import { LoaderFunction } from "remix"
 
 export let loader: LoaderFunction = async () => {
 
-  try {
-    Sentry.captureException(new Error("test error"))
+  // try {
+  //   Sentry.captureException(new Error("test error"))
 
-  } catch(err) {
-    Sentry.captureException(err)
-  }
+  // } catch(err) {
+  //   Sentry.captureException(err)
+  // }
 
   return null;
 }
