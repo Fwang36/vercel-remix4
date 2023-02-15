@@ -5,8 +5,9 @@ import * as Sentry from "@sentry/remix";
 import { useEffect } from "react";
 
 Sentry.init({
-  dsn: "https://5b6cc37906e9447d821a012049c41bda@o4504514258731008.ingest.sentry.io/4504514260369408",
+  dsn: "https://f5ea3254102d4890aff3291dce1e1478:63cec28b01e34b5b96227602629fc651@o1407376.ingest.sentry.io/4504606337007616",
   tracesSampleRate: 1,
+  debug: true,
   integrations: [
     new Sentry.BrowserTracing({
       routingInstrumentation: Sentry.remixRouterInstrumentation(
